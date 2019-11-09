@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            images 'node:latest'
+            image 'node:latest'
             args '/home/publish-workspace/ui/:/home/publish-workspace/ui/'
         }
     } 
