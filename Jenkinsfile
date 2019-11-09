@@ -3,6 +3,12 @@ pipeline {
         docker 'node:latest'
     } 
     stages {
+        stage('clean') {
+            steps {
+                echo 'start to clean'
+                sh 'rm -rf dist'
+            }
+        }
         stage('build') {
             steps {
                 echo 'start to build'
@@ -15,7 +21,7 @@ pipeline {
            steps {
                 echo 'start to publish ...'
                 sh 'rm -rf /home/publish-workspace/ui/dist'
-                sh 'mv ./dist /home/publish-workspace/ui/'
+                sh 'cp -r ./dist /home/publish-workspace/ui/'
            }
         }
     }
