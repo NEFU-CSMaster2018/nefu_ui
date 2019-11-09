@@ -6,6 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'start to build'
+                sh 'npm config set registry https://registry.npm.taobao.org'
                 sh 'npm install'
                 sh 'npm run build'
             }
