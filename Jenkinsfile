@@ -22,8 +22,7 @@ pipeline {
         stage('publish') {
            steps {
                 echo 'start to publish ...'
-                sh 'rm -rf /home/publish-workspace/ui/dist'
-                sh 'cp -r ./dist /home/'
+                echo '暂时软连接到本机'
            }
         }
     }
