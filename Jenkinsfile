@@ -2,7 +2,6 @@ pipeline {
     agent {
         docker {
             image 'node:latest'
-            args '/home/publish-workspace/ui/:/home/'
         }
     } 
     stages {
