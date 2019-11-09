@@ -1,6 +1,9 @@
 pipeline {
     agent {
-        docker 'node:latest'
+        docker {
+            images 'node:latest'
+            args '/home/publish-workspace/ui/:/home/publish-workspace/ui/'
+        }
     } 
     stages {
         stage('clean') {
