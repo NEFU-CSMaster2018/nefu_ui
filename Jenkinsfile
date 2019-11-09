@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:latest'
-            args '/home/publish-workspace/ui/:/home/publish-workspace/ui/'
+            args '/home/publish-workspace/ui/:/home/'
         }
     } 
     stages {
@@ -24,7 +24,7 @@ pipeline {
            steps {
                 echo 'start to publish ...'
                 sh 'rm -rf /home/publish-workspace/ui/dist'
-                sh 'cp -r ./dist /home/publish-workspace/ui/'
+                sh 'cp -r ./dist /home/'
            }
         }
     }
