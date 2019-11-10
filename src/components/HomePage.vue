@@ -21,7 +21,9 @@
           <li class="list-item" v-for="(intro, key) in userinfo.introduceList" :key="key">
             <ul class="item-detail">
               <li class="detail-title"><b>{{intro.title}}</b></li>
-              <li class="detail-content"><span>:</span>{{intro.content}}</li>
+              <li class="detail-content">
+                <span>:</span>
+                <a :href="intro.content" target="_blank" style="text-decoration: none;">{{intro.content}}</a></li>
             </ul>
           </li>
         </ul>
@@ -118,6 +120,9 @@ export default {
   .home-container .introduction {
     padding: 2em 2em 0 2em;
   }
+  .home-container .contact-info {
+    padding: 0 2em 0 2em;
+  }
 }
 .dott {
   position: absolute;
@@ -184,7 +189,7 @@ export default {
   color: #fff;
 }
 .text-container .contact-info .info-list .item-detail li:nth-child(1) {
-  width: 10%;
+  width: 20%;
 }
 .text-container .contact-info .info-list .item-detail li span {
   margin: 0.2em;
@@ -193,7 +198,8 @@ export default {
 .text-container .contact-info .info-list  .item-detail b {
   color: #fff;
 }
-.text-container .contact-info .info-list  .item-detail .detail-content {
+.text-container .contact-info .info-list  .item-detail .detail-content a {
   font-weight: 600;
+  color: #fff;
 }
 </style>
