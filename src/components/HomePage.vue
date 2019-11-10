@@ -15,9 +15,7 @@
       <div class="introduction">
         <h3 class="introduce-title">{{userinfo.introTitle}}</h3>
         <p class="introduce-content">软件工程专业硕士。热爱编码，主要从事前端开发，并向全栈方向努力。
-          日常喜欢写文章，总结自己工作中的心得，喜欢研究云计算相关技术，对Devops和容器化技术有一定研究。<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;本网站会将平时用到或者喜欢的技术实现和展现出来。前端主要采用vue框架并且结合微前端的思想设计，后端使用
-          koa和mongodb。部署通过Jenkins和docker容器技术实现自动化部署。
+          日常喜欢写文章，总结自己工作中的心得，喜欢研究云计算相关技术，对Devops和容器化技术有一定研究。
           </p>
       </div>
       <div class="contact-info">
