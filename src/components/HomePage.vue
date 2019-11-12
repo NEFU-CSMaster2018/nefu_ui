@@ -3,7 +3,7 @@
     <div class="dott"></div>
     <div class="picture-wall">
       <div class="wall-content">
-        <img src="../../assets/images/homepage/avator.jpeg" alt="">
+        <img src="../../static/images/homepage/avator.jpeg" alt="">
         <h3 class="username" style="color: #fff;">
           <span>{{userinfo.prename}}</span>
           <span>{{userinfo.name}}</span>
@@ -130,7 +130,7 @@ export default {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../../assets/images/homepage/dott.png);
+  background-image: url(../../static/images/homepage/dott.png);
   opacity: 0.4;
   z-index: 1;
 }
@@ -138,7 +138,7 @@ export default {
   position: relative;
   height: 100%;
   width: 100%;
-  background-image: url(../../assets/images/homepage/pagebg1.jpg);
+  background-image: url(../../static/images/homepage/pagebg1.jpg);
   background-size: cover;
   display: flex;
   display: -webkit-flex;
